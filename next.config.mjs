@@ -7,6 +7,10 @@ await import("./src/env.mjs");
 /** @type {import("next").NextConfig} */
 const config = {
   reactStrictMode: true,
+  images: {
+    // 画像の取得を許可するドメイン
+    domains: ['placehold.jp']
+  },
 
   /**
    * If you are using `appDir` then you must comment the below `i18n` config out.
